@@ -1,6 +1,6 @@
 # webServices
 
-Projeto web services com Spring Boot e JPA / Hibernate
+Projeto web services com Spring Boot e JPA / Hibernate - Curso Prof. Dr. Nelio Alves
 
 Objetivos
 
