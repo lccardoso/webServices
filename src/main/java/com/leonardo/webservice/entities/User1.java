@@ -3,10 +3,19 @@ package com.leonardo.webservice.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
-public class User implements Serializable {
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class User1 implements Serializable {
 
 	private static final long serialVersionUID = 1L;
+	
 	//Criaçãode atributos básicos
+	@Id 
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String name;
 	private String email;
@@ -14,12 +23,12 @@ public class User implements Serializable {
 	private String password;
 	
 	//Criação do copnstrutor - No caso vazio devido a uso do Spring
-	public User() {
+	public User1() {
 		
 	}
 
 	//Geração de construtor com todos os atributos da classe User
-	public User(Long id, String name, String email, String phone, String password) {
+	public User1(Long id, String name, String email, String phone, String password) {
 		super();
 		this.id = id;
 		this.name = name;
@@ -84,7 +93,7 @@ public class User implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		User other = (User) obj;
+		User1 other = (User1) obj;
 		return Objects.equals(id, other.id);
 	}
 	
