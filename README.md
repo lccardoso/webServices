@@ -23,7 +23,7 @@ Tecnologias Utilizadas
 
 ->Spring Boot
 
-->Apacha Toccat
+->Apache Toncat
 
 ->Maven
 
